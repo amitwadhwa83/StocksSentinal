@@ -78,7 +78,7 @@ def display_stock_overview(ticker, data):
             price_change = current_price - prev_close
             pct_change = (price_change / prev_close) * 100
             
-            delta_color = "normal" if price_change == 0 else "up" if price_change > 0 else "down"
+            delta_color = "normal" if price_change >= 0 else "inverse"
             st.metric(
                 label="Current Price",
                 value=f"${current_price:.2f}",
