@@ -11,4 +11,5 @@ dependencies = [
     "scikit-learn>=1.6.1",
     "streamlit>=1.44.0",
     "yfinance>=0.2.55",
+    "setuptools>=78.1.0"
 ]
